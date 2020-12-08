@@ -47,6 +47,8 @@ function initMap() {
       const infowindow = new google.maps.InfoWindow({
 
         content: data.name,
+        // accuracy
+        // activity 
 
       });
 
@@ -63,10 +65,18 @@ function initMap() {
 
 }
 
-var lat = 5598;
+var lat = -50107869;
 
-var num = lat.toString().replace(/(..)$/, ".$1");
+var num = lat.toString();
 
-var floatNum = parseFloat(num);
+if (num.length == 9) {
 
-// console.log(initMap.latLng);
+  var floatNum = num.substring(0,2) + "." + num.substring(2);
+
+} else if (num.length = 8) {
+
+  var floatNum = num.substring(0,1) + "." + num.substring(1);
+
+}
+
+console.log(floatNum);

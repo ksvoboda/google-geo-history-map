@@ -2,6 +2,8 @@
 
 Google Geo History Map is personal project of mine to show all recorded positions by Google Maps.
 
+<b> Warning: </b> this is working only in northern hemisphere and eastern hemisphere, because Google is saving coordinates without decimal and I have to add it to work. In southern or western hemisphere, there's - and breaks the logic behind this program. (it will show posistion, but it is possible it will be somewhere else)
+
 
 ## Installation & usage
 
