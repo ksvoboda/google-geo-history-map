@@ -11,6 +11,8 @@ To use this project, just download or clone this repository and put "Location Hi
 ## Todo
 
 - Fix showing locations in e.g. Great Britain (one digid before decimal)
+- Distinguish activity (in vehicle, on foot, etc.)
+- Info windows with all the informations
 - Optional: Upload JSON file straight from the site (coding skills not required)
 - Optional: Make the site public (only if previous point is done)
 

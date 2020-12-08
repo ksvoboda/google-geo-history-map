@@ -34,14 +34,6 @@ function initMap() {
       var latitudeNum = parseFloat(latitudeDot);
       var longitudeNum = parseFloat(longitudeDot);
 
-      // console.log(latitudeNum);
-      // console.log(longitudeNum);
-
-      // creating latLng variable for each marker
-      // var coordinates = new google.map.latLng(latitudeNum, longitudeNum);
-
-      // console.log(coordinates);
-
       // placing each marker on the map
       var marker = new google.maps.Marker({
 
@@ -51,6 +43,7 @@ function initMap() {
 
       });
 
+      /*
       const infowindow = new google.maps.InfoWindow({
 
         content: data.name,
@@ -62,6 +55,7 @@ function initMap() {
         infowindow.open(map, marker);
 
       });
+      */
 
     });
 
