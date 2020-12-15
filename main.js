@@ -26,9 +26,26 @@ function initMap() {
       var latitudeString = data.latitudeE7.toString();
       var longitudeString = data.longitudeE7.toString();
 
-      // putting . after 2 digits
-      var latitudeDot = latitudeString.substring(0,2) + "." + latitudeString.substring(2);
-      var longitudeDot = longitudeString.substring(0,2) + "." + longitudeString.substring(2);
+      // putting . in 
+      if (latitudeString.length == 9) {
+
+        var latitudeDot = latitudeString.substring(0,2) + "." + latitudeString.substring(2);
+      
+      } else if (latitudeString.length == 8) {
+      
+        var latitudeDot = latitudeString.substring(0,1) + "." + latitudeString.substring(1);
+      
+      }
+
+      if (longitudeString.length == 9) {
+
+        var longitudeDot = longitudeString.substring(0,2) + "." + longitudeString.substring(2);
+      
+      } else if (longitudeString.length == 8) {
+      
+        var longitudeDot = longitudeString.substring(0,1) + "." + longitudeString.substring(1);
+      
+      }
 
       // converting string to number (float)
       var latitudeNum = parseFloat(latitudeDot);
@@ -64,19 +81,3 @@ function initMap() {
   });
 
 }
-
-var lat = -50107869;
-
-var num = lat.toString();
-
-if (num.length == 9) {
-
-  var floatNum = num.substring(0,2) + "." + num.substring(2);
-
-} else if (num.length = 8) {
-
-  var floatNum = num.substring(0,1) + "." + num.substring(1);
-
-}
-
-console.log(floatNum);
