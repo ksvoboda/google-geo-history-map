@@ -2,18 +2,18 @@
     "locations": [
         {
             "name": "Rixos The Palm Dubai",
-            "latitudeE7": 251256, 
-            "longitudeE7": 551535
+            "latitudeE7": 501078696, 
+            "longitudeE7": 551535456
         },
         {
             "name": "Shangri-La Hotel",
-            "latitudeE7": 211289, 
-            "longitudeE7": 501535
+            "latitudeE7": 211289345, 
+            "longitudeE7": 501535345
         },
         {
             "name": "Grand Hyatt",
-            "latitudeE7": 351234, 
-            "longitudeE7": 401535
+            "latitudeE7": 351234123, 
+            "longitudeE7": 401535789
         }
     ]
 }
